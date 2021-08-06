@@ -1,0 +1,233 @@
+@font-face {
+    font-family: Bebas;
+    src: url(./Concept/Assets/Fonts/BebasNeue-Regular.otf);
+}
+
+.Textsidebar {
+    font-family: Bebas;
+    height: 100%;
+    width: 15vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0px;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 1%;
+    transition: 0.4s;
+}
+
+.Iconsidebar {
+    display: none;
+    font-family: Bebas;
+    height: 100%;
+    width: 10vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0px;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 1%;
+    transition: 0.4s;
+}
+
+.Iconsidebar a {
+    padding-left: 10%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 5vw;
+    color: #818181;
+    display: block;
+    transition: 0.3;
+}
+
+.Textsidebar a {
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: #818181;
+    display: block;
+    transition: 0.3;
+    text-align: left;
+    padding-left: 10%;
+}
+
+#Sidebar a:hover {
+    color: #f1f1f1;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+#logo {
+    font-size: 3.5vw;
+}
+
+#about {
+    position: absolute;
+    bottom: 1.5vh;
+}
+
+.ContentArea {
+    background-color: rgb(26, 24, 24);
+    margin-top: 2.5vh;
+    margin-left: 20vw;
+    margin-right: 5vw;
+    margin-bottom: 15vh;
+    height: auto;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.PostArea {
+    background-color: rgb(26, 24, 24);
+    height: 20vh;
+    width: auto;
+    border-radius: 25px;
+}
+
+#PostAvatar {
+    height: 50%;
+    width: auto;
+    margin: 5vh;
+}
+
+#PostText {
+    position: absolute;
+    color: white;
+    top: 9vh;
+    width: 45%;
+    height: 10vh;
+    background-color: rgb(26, 24, 24);
+    border-width: 2px 0px 2px;
+    border-color: rgb(255, 255, 255);
+    font-size: 2.5vw;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#ImageButton {
+    border: none;
+    background: none;
+    font-size: 4vh;
+    text-align: right;
+}
+
+.DummyTextPost {
+    clear: right;
+    margin-top: 5%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    min-height: 14vh;
+    width: auto;
+    border-radius: 25px;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+.DummyTextPost img {
+    height: 10vh;
+    width: auto;
+    margin: 2vh;
+    border-radius: 25px;
+    float: left;
+    clear: left;
+}
+
+#DummyPostText {
+    text-align: center;
+    font-family: Arial;
+}
+
+.container {
+    height: 40vh;
+    width: auto;
+    border-radius: 25px;
+}
+
+#row1 {
+    height: 10vh;
+    width: auto;
+    border-radius: 25px;
+}
+
+#row2 {
+    top: 10vh;
+    height: 10vh;
+    width: auto;
+    border-radius: 25px;
+}
+
+#inputform {
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    border-width: 0px 0px 2px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(26, 24, 24);
+    text-align: center;
+    font-size: 3vw;
+}
+
+.submitButton {
+    border: none;
+    background: none;
+    font-size: 4vw;
+    margin-left: 45%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#myInput {
+    width: 80%;
+    height: auto;
+    font-size: 2.5vw;
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-left: 8%;
+    border-radius: 25px;
+    font-family: Bebas;
+    text-align: center;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-family: Bebas;
+    font-size: 2.5vw;
+    color: black;
+    display: block;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+@media screen and (max-width: 800px) {
+    .Textsidebar {
+        display: none;
+    }
+    .Iconsidebar {
+        display: block;
+    }
+    .Iconsidebar a {
+        padding-bottom: 75%;
+    }
+    .ContentArea {
+        margin-left: 15vw;
+    }
+}

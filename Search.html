@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <title>WalkR</title>
+</head>
+
+<body>
+    <!--Text Sidebar-->
+    <div id="Sidebar" class="Textsidebar">
+        <a href="./Dashboard.html" id="logo">WalkR</a>
+        <a href="#">Profile</a>
+        <a href="#">Messages</a>
+        <a href="./Search.html">Search</a>
+        <a href="./About.html" id="about">About</a>
+    </div>
+
+    <!--Icon Sidebar-->
+    <div id="Sidebar" class="Iconsidebar">
+        <a href="./Dashboard.html">🐶</a>
+        <a href="#">🧑</a>
+        <a href="#">✉️</a>
+        <a href="./Search.html">🔎</a>
+        <a href="./About.html" id="about">❔</a>
+    </div>
+
+    <!--ContentArea-->
+    <div class="ContentArea">
+        <input type="text" id="myInput" onkeyup="SearchFunction()" placeholder="Search for users">
+
+        <ul id="myUL">
+            <li><a href="#">Adele </a></li>
+            <li><a href="#">Agnes</a></li>
+            <li><a href="#">Ava</a></li>
+
+            <li><a href="#">Billy</a></li>
+            <li><a href="#">Bob</a></li>
+
+            <li><a href="#">Calvin</a></li>
+            <li><a href="#">Christina</a></li>
+            <li><a href="#">Cindy</a></li>
+            <li><a href="#">Jordan</a></li>
+            <li><a href="#">Rosie</a></li>
+
+        </ul>
+    </div>
+    <!--modified from https://www.w3schools.com/howto/howto_js_filter_lists.asp -->
+    <script>
+        function SearchFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

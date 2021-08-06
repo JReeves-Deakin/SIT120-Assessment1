@@ -1,0 +1,5 @@
+Font:
+Heading: https://www.dafont.com/bebas-neue.font?text=WalkR
+
+Image:
+https://www.flaticon.com/free-icon/avatar_147144
